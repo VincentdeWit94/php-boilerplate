@@ -1,37 +1,11 @@
-SlimStarter
+PHP dashboard boilerplate
 ===========
-
-SlimStarter is a bootstrap application built with Slim Framework in MVC architecture,
-with Laravel's Eloquent as database provider (Model) and Twig as template engine (View).
-
-Additional package is Sentry as authentication provider and Slim-facade which provide easy access to underlying Slim API
-with static interface like Laravel syntax (built based on Laravel's Facade).
-
-####Showcase
-You can test SlimStarter in live site by visiting here :
-(shared hosting) http://slimstarter.xsanisty.com
-(pagodabox) http://slimstarter.gopagoda.com
-
-with username ```admin@admin.com``` and password ```password```.
-
-
-####Installation
-
-> You can now install SlimStarter on pagodabox via App Cafe https://pagodabox.com/cafe/ikhsan017/slimstarter
-
 
 #####1 Manual Install
 You can manually install SlimStarter by cloning this repo or download the zip file from this repo, and run ```composer install```.
 ```
-$git clone https://github.com/xsanisty/SlimStarter.git .
+$git clone <repo> .
 $composer install
-```
-
-#####2 Install via ```composer create-project```
-Alternatively, you can use ```composer create-project``` to install SlimStarter without downloading zip or cloning this repo.
-
-```
-composer create-project xsanisty/slim-starter --stability="dev"
 ```
 
 #####3 Setup Permission
@@ -50,7 +24,7 @@ http://localhost/path/to/SlimStarter/public/install.php
 
 
 ####Configuration
-Configuration file of SlimStarter located in ```app/config```, edit the database.php, cookie.php and other to match your need
+Configuration file of the system located in ```app/config```, edit the database.php, cookie.php and other to match your need
 
 ####Routing
 Routing configuration is located in ```app/routes.php```, it use Route facade to access underlying Slim router.
@@ -161,7 +135,7 @@ $this->app; //reference to Slim instance
 ```
 
 ######Loading javascript assets or CSS assets
-SlimStarter shipped with default master template with js and css asset already in place, to load your own js or css file
+This system shippes with default master template with js and css asset already in place, to load your own js or css file
 you can use ```loadJs``` or ```loadCss``` , ```removeJs``` or ```removeCss``` to remove js or css, ```resetJs``` or ```resetCss```
 to remove all queued js or css file.
 
